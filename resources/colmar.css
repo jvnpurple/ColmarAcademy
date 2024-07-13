@@ -1,0 +1,45 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 32px;
+    color: rgb(143, 143, 143);
+}
+
+nav div strong {
+    color: #000;
+}
+
+nav div img{
+    width: 42px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 24px;
+    list-style: none;
+    font-size: 22px;
+}
+
+nav ul a {
+    text-decoration-line: none;
+    margin-left: 24px;
+    color: #000;
+}
+
+nav ul a:hover {
+    color: cadetblue;
+}
+/* END OF NAV STYLES */
+
