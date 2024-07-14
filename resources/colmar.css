@@ -118,6 +118,7 @@ main .main-col-1 figure h3 {
     margin: 32px 0 24px 0   ;
 }
 main .main-col-1 figcaption {
+    margin-top: 32px;
     font-size: 18px;
     color: gray;
 }
@@ -132,6 +133,10 @@ main .main-col-2 .card {
     align-items: center;
     border-bottom: .8px solid rgb(192, 192, 192);
     padding: 32px 16px;
+}
+
+main .main-col-2 .card:hover {
+    background-color: #dfe0e5;
 }
 
 main .main-col-2 .card .card-img {
@@ -162,4 +167,48 @@ main .main-col-2 .card .card-info a {
     font-size: 16px;
     text-decoration: none;
     color: royalblue;
+}
+/* END OF MAIN STYLES */
+
+.courses {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+/*  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
+ */ grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 32px 72px;
+    background-color: rgb(245, 245, 245);
+}
+
+.courses .course-card {
+    background-color: #fff;
+    padding-bottom: 24px;
+}
+
+.courses h2 {
+    grid-area: 1/1/2/4;
+    margin: 32px 0px;
+}
+
+.courses .course-card h5, 
+.courses .course-card p, 
+.courses .course-card figcaption {
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.courses .course-card h5 {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 16px;
+}
+
+.courses .course-card p, figcaption {
+    font-size: 16px;
+}
+
+.courses .course-card img {
+    width: 100%;
+    height: auto;
 }
