@@ -205,10 +205,95 @@ main .main-col-2 .card .card-info a {
 }
 
 .courses .course-card p, figcaption {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .courses .course-card img {
     width: 100%;
     height: auto;
+}
+/* END OF COURSES SECTION */
+
+.thesis-section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 90%;
+    justify-items: center;
+    border-bottom: .8px solid rgb(192, 192, 192);
+    padding-bottom: 32px;
+}
+
+.thesis-section h2 {
+    grid-area: 1/1/2/3;
+    margin: 32px 0;
+}
+
+.thesis-section .thesis-section-col-1 {
+    grid-area: 2/1/3/2;
+    margin: 16px 24px;
+}
+
+.thesis-section-col-1 figure video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-section-col-1 figure h3 {
+    font-size: 42px;
+    margin: 32px 0;
+}
+
+.thesis-section .thesis-section-col-2 {
+    grid-area: 2/2/3/3;
+}
+
+.thesis-section .thesis-section-col-2 .card {
+    display: flex;
+    padding: 16px;
+}
+
+.thesis-section .thesis-section-col-2 .card-img {
+    width: 35%;
+    margin-right: 16px;
+}
+
+.thesis-section .thesis-section-col-2 .card-img img {
+    background-color: #bbb5b580;
+    width: 100%;
+    height: auto;
+}
+
+.thesis-section .thesis-section-col-2 .t-card-info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thesis-section .thesis-section-col-2 .card:hover {
+    background-color: #dfe0e5;
+}
+
+
+.thesis-section .thesis-section-col-2 .t-card-info p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+/* END OF THESIS SECTION */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 24px 32px 24px;
+    font-size: 16px;
+    color: #636363;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div p {
+    margin-left: 16px;
 }
